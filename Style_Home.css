@@ -1,0 +1,266 @@
+@font-face
+{
+	font-family:"Rajdhani-Bold";
+	src:url("fonts/Rajdhani-Bold.eot");
+	src:url("fonts/Rajdhani-Bold.otf")format("opentype");
+	src:url("fonts/Rajdhani-Bold.ttf")format("truetype");
+}
+body
+{
+	background-image:url(images/bg.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+}
+.Title
+{
+	font-size: 72px;
+	font-face:Rajdhani-Bold;
+	color: rgb(255, 255, 255);
+	position:relative;
+	left:350px;
+	top:200px;
+	text-align: center;
+	text-shadow: 2.5px 4.33px 9.5px rgba(25, 25, 25, 0.941);
+	width: 100px;
+	height: 80px;
+	z-index:9;
+	animation-name:title_animation;
+	animation-iteration-count:1;
+	animation-duration:1.5s;
+	animation-timing-function:ease-in;
+}
+.Title:hover
+{
+	text-shadow: 5.5px 9.33px 2.5px rgba(25, 25, 25, 0.241);
+}
+#events
+{
+	/*add background image,transiton property*/
+	position: relative;
+	opacity: 0.5;
+	animation-name:eventsmoment;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+#events:hover
+{
+	animation-play-state:paused;
+	opacity:1.0;
+}
+
+#news
+{
+	/*add background image,transiton property*/
+	position: relative;
+	opacity: 0.5;
+	left :-100px;
+	animation-name:newsmoment;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+#news:hover
+{
+	animation-play-state:paused;
+	opacity:1.0;
+}
+#about
+{
+	position: relative;
+	top: 100px;
+	left: 100px;
+	opacity: 0.5;
+	animation-name:aboutmoment;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+#about:hover
+{
+	animation-play-state:paused;
+	opacity:0.8;
+}
+#highlights
+{
+	position: relative;
+	top: -150px;
+	left: 100px;
+	opacity: 0.5;
+	animation-name:highlightsmoment;
+	animation-duration:8s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+#highlights:hover
+{
+	animation-play-state:paused;
+	opacity:0.8;
+}
+#gallery
+{
+	position: relative;
+	top: -230px;
+	left: 100px;
+	opacity: 0.5;
+	animation-name:gallerymoment;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+#gallery:hover
+{
+	animation-play-state:paused;
+	opacity:0.8;
+}
+.train
+{
+	overflow: hidden;
+	position: relative;
+	left:-10px;
+	top:-160px;
+	width: 1370px;
+	height: 100px;
+}
+#gogo
+{
+	position: relative;
+	z-index: 990;
+	animation-name:train;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-play-state: running;
+}
+#gogo:hover
+{
+	animation-play-state: paused;
+}
+#foreground
+{
+	width:1370px;
+	height: 750px;
+	background-image: url(images/Frame.png);
+	background-repeat:no-repeat;
+	position: absolute;
+	left:-1px;
+	z-index:-1;
+	background-size: cover;
+	transform:translateY(-25%);
+}
+
+@keyframes title_animation
+{
+	0%
+	{
+		top:250px;
+		opacity:0.0;		
+	}
+	100%
+	{
+		top:200px;
+		opacity:1.0;
+	}
+}
+
+@keyframes aboutmoment
+{
+	0%
+	{
+		left :100px;
+	}
+	50%
+	{
+		left:150px;
+	}
+	
+	100%
+	{
+		left:100px;
+	}
+
+}
+@keyframes eventsmoment
+{
+	0%
+	{
+		left: 1000px;
+	}
+	50%
+	{
+		left: 1050px;
+	}
+	
+	100%
+	{
+		left: 1000px;
+	}
+
+}
+@keyframes newsmoment
+{
+	0%
+	{
+
+		left: 1020px;
+	}
+	50%	
+	{
+		left: 1000px;
+	}
+	
+	100%
+	{
+		left: 1020px;
+	}
+
+}
+@keyframes highlightsmoment
+{
+	0%
+	{
+
+		left: 1120px;
+	}
+	50%	
+	{
+		left: 1100px;
+	}
+	
+	100%
+	{
+		left: 1120px;
+	}
+
+}
+@keyframes gallerymoment
+{
+	0%
+	{
+
+		left: 120px;
+	}
+	50%	
+	{
+		left: 100px;
+	}
+	
+	100%
+	{
+		left: 120px;
+	}
+
+}
+@keyframes train
+{
+	0%
+	{
+		left: -1920px;
+	}
+	100%
+	{
+		left: 1360px;
+	}
+}
